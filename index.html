@@ -22,8 +22,9 @@
         <img src="src/images/illustration.svg" id="password_img" alt="Imagem">
         <h1 id="title">Gerador de senhas</h1>
         <div class="password_container">
-            <span id="password"></span>
+            <span id="password">aresrasrhs</span>
             <button id="copy"><i class="ph-fill ph-copy"></i></button>
+            <div id="tooltip">Copiar</div>
         </div>
         <div id="password_items">
             <div class="item">
@@ -33,6 +34,10 @@
             <div class="item">
                 <input type="checkbox" id="include_uppercase" name="include_uppercase">
                 <label for="include_uppercase">Incluir letras maiúsculas</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="include_lowercase" name="include_lowercase">
+                <label for="include_lowercase">Incluir letras minúsculas</label>
             </div>
             <div class="item">
                 <input type="checkbox" id="include_number" name="include_number">
@@ -45,5 +50,7 @@
             <button id="generator">Gerar senha</button>
         </div>
     </div>
+
+    <script src="src/scripts/script.js"></script>
 </body>
 </html>
