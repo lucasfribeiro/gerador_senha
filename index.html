@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="shortcut icon" href="src/images/illustration.svg" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+</head>
+<body>
+    <div id="container">
+        <img src="src/images/illustration.svg" alt="Imagem">
+        <h1 id="title">Gerador de senhas</h1>
+        <div class="passoword_container">
+            <span id="password"></span>
+            <button id="copy"><i class="ph-fill ph-copy"></i></button>
+        </div>
+        <div id="password_items">
+            <div class="item">
+                <input type="number" id="size" name="size">
+                <label for="size">Quantidade de caracteres</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="include_uppercase" name="include_uppercase">
+                <label for="include_uppercase">Incluir letras maiúsculas</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="include_number" name="include_number">
+                <label for="include_number">Incluir números</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="include_special_caracters" name="include_special_caracters">
+                <label for="include_special_caracters">Incluir caracteres especiais</label>
+            </div>
+            <button id="generator">Gerar senha</button>
+        </div>
+    </div>
+</body>
+</html>
