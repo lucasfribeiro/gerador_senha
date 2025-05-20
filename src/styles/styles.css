@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --color-primary-1:#8BC34A;
+    --color-primary-2:#8BC34AA6;
+    
+    --color-neutral-1:#F8FAFC;
+    --color-neutral-2:#24232B;
+    --color-neutral-3:#13121A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-neutral-3);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:.75rem;
+}
+
+#password_img{
+    width: 100px;
+}
+
+#title{
+    color: var(--color-neutral-1);
+    font-weight:500;
+    margin-bottom: 10px;
+}
+
+#password_container{
+    witdth: 100%;
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-neutral-2);
+}
